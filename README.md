@@ -79,7 +79,7 @@
 3. 解压压缩包（到某个目录），打开 Android Studio ，点 File -> Open ，找到对应目录并打开项目 
 4. 将自己的图标资源按规则命名好并放入对应文件夹 (项目已包含大量的图标，自适应图标定义在 **drawable-anydpi-v26** 文件夹中，其对应的图片文件在 **mipmap-nodpi** 文件夹中)
 5. 修改配置项（可选，不清楚的直接跳过）
-6. 打开 **res\values\strings.xml** ，修改 **app_name** 为自己的应用名
+6. 打开 **res\values\strings.xml** ，修改 **app_name** 为自己的应用名；打开 **assets\themes.json** ，修改 **title** 为自己的图标包名字
 7. 打开 **app** 目录下的 **build.gradle** ，修改 **applicationId** 的值为你要替换的图标包的应用包名（若不清楚，请前往 [OneSeriesStarter](https://github.com/HowieHChen/OneSeriesStarter)）
 8. 打包应用（若不清楚，可参考[相关教程](https://cloud.tencent.com/developer/article/1772561)）
 - 由于不支持动态图标，故分成了 **standard** 和 **special** 两个版本，前者覆盖了时钟和日历应用而后者没有。 
@@ -100,3 +100,5 @@
 | icon_scale_size | res\values\integer.xml | integer | 0-100 (也可大于100) | 图标缩放系数 |
 | icon_bg_range | res\values\integer.xml | integer | 0、1、2、3 | 自适应图标置为1。 置为2时不额外添加图标底板 (具体细节暂时未知) |
 | app_name | res\values\string.xml | string | 文本 | 应用名 |
+| thumbnail_iconpack.jpg | assets\preview | JPG | 图片 | 在主题商店中的缩略图 |
+| iconpack_summary.jpg</br>iconpack_preview1.jpg</br>iconpack_preview2.jpg | assets\preview | JPG | 图片 | 在主题商店详情页中的展示图（图片命名与顺序可在assets\themes.json中修改） |
