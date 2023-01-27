@@ -98,5 +98,5 @@
 | theme_designer_enable_third_party_app_icon | res\values\bool.xml | bool | true / false | 图标是否覆盖第三方应用 |
 | mask_from_theme | res\values\bool.xml | bool | true / false | 是否使用图标包内的遮罩 |
 | icon_scale_size | res\values\integer.xml | integer | 0-100 (也可大于100) | 图标缩放系数 |
-| icon_bg_range | res\values\integer.xml | integer | 0、1、2、3 | 自适应图标置为1, 2时不额外添加图标底板 (具体细节暂时未知) |
+| icon_bg_range | res\values\integer.xml | integer | 0、1、2、3 | 自适应图标置为1。 置为2时不额外添加图标底板 (具体细节暂时未知) |
 | app_name | res\values\string.xml | string | 文本 | 应用名 |
