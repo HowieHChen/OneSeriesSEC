@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.oneseries.sec'
+    compileSdk 32
+
+    defaultConfig {
+        // 将此设置为你想要替换的图标包的包名
+        applicationId 'sidia.OT_2021_ValentineFondue.appiconpack'
+        minSdk 30
+        targetSdk 32
+        versionCode 1000
+        versionName "1000"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    flavorDimensions 'edition'
+    productFlavors {
+        standard {
+            dimension 'edition'
+        }
+        special {
+            dimension 'edition'
+            versionNameSuffix '-se'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                // 这里修改apk文件名
+                def fileName = "${variant.name}-${defaultConfig.versionCode}-${defaultConfig.versionName}.apk"
+                // println(fileName)
+                output.outputFileName = fileName
+            }
+        }
+    }
+}
+

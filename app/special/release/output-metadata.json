@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "sidia.OT_2021_ValentineFondue.appiconpack",
+  "variantName": "specialRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1000,
+      "versionName": "1000-se",
+      "outputFile": "specialRelease-1000-1000.apk"
+    }
+  ],
+  "elementType": "File"
+}

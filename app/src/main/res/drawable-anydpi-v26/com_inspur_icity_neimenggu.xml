@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <foreground android:drawable="@mipmap/china_gov_im_fg"/>
+    <background android:drawable="@mipmap/china_gov_im_bg"/>
+</adaptive-icon>

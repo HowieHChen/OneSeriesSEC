@@ -1,0 +1,21 @@
+{
+    "tool_version": "11.1.08w.1",
+    "header": {
+        "preview_ordering": [
+            "iconpack_summary.jpg",
+            "iconpack_preview1.jpg",
+            "iconpack_preview2.jpg"
+        ],
+        "description": "",
+        "resolutions": [
+            "1440x2560",
+            "1080x1920",
+            "720x1280"
+        ],
+        "title": "Your AppIcon Here",
+        "type": "AppIcon"
+    },
+    "visibilityResult": "success",
+    "opentheme_version": "5.0.0",
+    "visibilityTimeStamp": "1611684330519"
+}

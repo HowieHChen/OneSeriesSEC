@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="theme_designer_enable_third_party_app_icon">true</bool>
+    <bool name="mask_from_theme">true</bool>
+</resources>
