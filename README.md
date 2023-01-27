@@ -80,8 +80,9 @@
 4. 将自己的图标资源按规则命名好并放入对应文件夹 (项目已包含大量的图标，自适应图标定义在 **drawable-anydpi-v26** 文件夹中，其对应的图片文件在 **mipmap-nodpi** 文件夹中)
 5. 修改配置项（可选，不清楚的直接跳过）
 6. 打开 **res\values\strings.xml** ，修改 **app_name** 为自己的应用名；打开 **assets\themes.json** ，修改 **title** 为自己的图标包名字
-7. 打开 **app** 目录下的 **build.gradle** ，修改 **applicationId** 的值为你要替换的图标包的应用包名（若不清楚，请前往 [OneSeriesStarter](https://github.com/HowieHChen/OneSeriesStarter)）
-8. 打包应用（若不清楚，可参考[相关教程](https://cloud.tencent.com/developer/article/1772561)）
+7. 打开 **app** 目录下的 **build.gradle** ，修改 **versionCode** 和 **versionName** （**versionCode** 过低会导致三星主题商店提示更新而无法应用，默认为1000，若提示更新可改至2000或更高）
+8. 打开 **app** 目录下的 **build.gradle** ，修改 **applicationId** 的值为你要替换的图标包的应用包名（若不清楚，请前往 [OneSeriesStarter](https://github.com/HowieHChen/OneSeriesStarter)）
+9. 打包应用（若不清楚，可参考[相关教程](https://cloud.tencent.com/developer/article/1772561)）
 - 由于不支持动态图标，故分成了 **standard** 和 **special** 两个版本，前者覆盖了时钟和日历应用而后者没有。 
 
 ### 使用图标包
